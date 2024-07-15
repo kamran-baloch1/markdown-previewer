@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background: #000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.md__wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 6rem;
+    gap: 2rem;
+
+}
+.md__wrapper-input textarea {
+    min-width: 40vw;
+    min-height: 40vh;
+    padding: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1,h2,h3,h4,h5,h6 {
+    padding: 10px;
+    border-bottom: 2px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+.md__wrapper-input .header, .md__wrapper-preview .header {
+    background: #09cfd6;
+    border-bottom: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+
+
+.md__wrapper-preview {
+    min-width: 60vw;
+    overflow: auto;
+    background: #fff;
+    padding: 2rem;
+    max-height: 700px;
+    max-width: 70vw;
+    position: relative;
 }
+
+
+p {
+    margin: 2rem;
+    line-break: strict
+}
+li {
+    margin-left: 10px;
+}
+
+ul {
+    margin: 2rem;
+}
+
+img {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+code {
+    background: #000;
+    color: white;
+    width: 100%;
+    margin: 2rem;
+    padding: 1rem;
+    display: block;
+    margin: 1rem auto;
+    overflow: auto;
+}
+
+blockquote {
+    margin-left: 2rem;
+    border-left: 10px solid purple;
+    padding: 0;
+}
+
+table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
