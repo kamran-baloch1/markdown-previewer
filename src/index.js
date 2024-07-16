@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM, {createRoot} from 'react-dom'
+import {createRoot} from 'react-dom'
 
 import App from './App'
 
